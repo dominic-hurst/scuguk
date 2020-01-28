@@ -15,7 +15,8 @@ const MyFetch = async (url, isAuthenticated, getIdTokenClaims) => {
         }
     }
 
-    return await fetch(`${process.env.SCUG_API}${url}`, {
+    //return await fetch(`${process.env.SCUG_API}${url}`, {
+    return await fetch(`https://scuguk.azurewebsites.net${url}`, {
         headers: headers
     });
 }
